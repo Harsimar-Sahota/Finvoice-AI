@@ -5,10 +5,10 @@
 **Finvoice AI** is a full-stack, AI-driven invoicing and finance automation platform.
 It converts plain text (emails, messages, or receipts) into professional invoices, sends automated payment reminders, and generates insightful financial summaries — all powered by **Google Gemini AI**.
 
-✅ Built with the **MERN Stack**
-✅ Enhanced with **Docker** + **CI/CD Pipelines**
-✅ Secured via **JWT Authentication**
-✅ Tested with **Jest**
+ Built with the **MERN Stack**
+ Enhanced with **Docker** + **CI/CD Pipelines**
+ Secured via **JWT Authentication**
+ Tested with **Jest**
 
 ---
 
@@ -18,8 +18,8 @@ It converts plain text (emails, messages, or receipts) into professional invoice
 🔐 **Test Credentials:**
 
 ```
-email: demo@finvoice.ai  
-password: Demo@123
+email: Demo@FinvoiceAI.com
+password: Demopass12$
 ```
 
 🎥 **90-Second Demo Video:** *[Add your Loom or YouTube link]*
@@ -28,13 +28,20 @@ password: Demo@123
 
 ## 🖼️ Screenshots
 
-(Add 3–5 screenshots here)
+###  Dashboard Overview
+![Dashboard](./screenshots/dashboard.png)
 
-* Dashboard Overview
-* Create Invoice
-* AI-Generated Invoice
-* AI Payment Reminder
-* Profile Settings
+###  Create Invoice
+![Create Invoice](./screenshots/create-invoice.png)
+
+###  AI-Generated Invoice
+![AI Invoice](./screenshots/ai-generated.png)
+
+###  AI Payment Reminder Email
+![Payment Reminder](./screenshots/reminder-email.png)
+
+###  Profile Settings
+![Profile Settings](./screenshots/profile-settings.png)
 
 ---
 
@@ -89,14 +96,7 @@ It integrates Google Gemini to **parse unstructured text into structured invoice
 
 ## 🏗️ Architecture Diagram
 
-*(Add your PNG image here — generated with draw.io, Excalidraw, or Miro)*
-
-Example:
-
-```
-Client (React)  →  Express API  →  Gemini AI Service  →  MongoDB
-```
-
+![Architecture Diagram](./docs/architecture.png)
 ---
 
 ## 📂 Project Structure
@@ -204,9 +204,7 @@ This project uses **GitHub Actions** for:
 Add your badge here after setup:
 `![CI](https://github.com/Harsimar-Sahota/Finvoice-AI/actions/workflows/main.yml/badge.svg)`
 
----
-
-## ✅ Testing (Jest)
+##   Testing (Jest)
 
 Finvoice AI uses **Jest** for unit testing.
 
@@ -271,7 +269,7 @@ This project aligns with Y Combinator’s mission of building AI tools that auto
 Full Stack Developer — MERN + AI
 
 🌐 [GitHub](https://github.com/Harsimar-Sahota)
-💼 [LinkedIn](https://linkedin.com/in/your-link)
+💼 [LinkedIn](https://linkedin.com/in/Harsimar-Sahota)
 
 ---
 
@@ -280,5 +278,3 @@ Full Stack Developer — MERN + AI
 This project is open-source under the **MIT License**.
 
 ---
-
-Would you like me to generate those **next** so your repo becomes fully production-ready on GitHub?
