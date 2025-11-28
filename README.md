@@ -14,7 +14,7 @@ It converts plain text (emails, messages, or receipts) into professional invoice
 
 ## 🌐 Live Demo
 
-🔗 **App URL:** *[Add your deployed link]*
+🔗 **App URL:** **[https://www.finvoiceai.app](https://www.finvoiceai.app)**
 🔐 **Test Credentials:**
 
 ```
