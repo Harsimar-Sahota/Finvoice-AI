@@ -1,0 +1,39 @@
+name: Finvoice AI CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    services:
+      mongo:
+        image: mongo:6
+        ports:
+          - 27017:27017
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Backend install
+        run: |
+          cd backend
+          npm install
+
+      - name: Backend tests
+        run: |
+          cd backend
+          npm test
+
+      - name: Docker build
+        run: docker compose build

@@ -382,24 +382,9 @@ const SignUp = () => {
           )}
 
           {/* Terms & Conditions */}
-          <div className="flex items-start pt-2">
-            <input
-              type="checkbox"
-              id="terms"
-              className="w-4 h-4 text-black border-gray-300 rounded focus:ring-black mt-1"
-              required
-            />
-            <label htmlFor="terms" className="ml-2 text-sm text-gray-600">
-              I agree to the{" "}
-              <button className="text-black hover:underline">
-                Terms of Service
-              </button>{" "}
-              and{" "}
-              <button className="text-black hover:underline">
-                Privacy Policy
-              </button>
-            </label>
-          </div>
+              <p className="pt-2 text-sm text-gray-500">
+            By signing up, you agree to our Terms of Service and Privacy Policy.
+             </p>
 
           {/* Sign Up Button */}
           <button

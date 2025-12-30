@@ -39,7 +39,7 @@ const Contact = () => {
           <a href="https://linkedin.com/in/harsimar-sahota" target="_blank" rel="noopener noreferrer" className="px-5 py-3 border rounded-lg text-slate-700">
             LinkedIn
           </a>
-          <a href="https://github.com/your-repo" target="_blank" rel="noopener noreferrer" className="px-5 py-3 border rounded-lg text-slate-700">
+          <a href="https://github.com/Harsimar-Sahota" target="_blank" rel="noopener noreferrer" className="px-5 py-3 border rounded-lg text-slate-700">
             GitHub
           </a>
         </div>
