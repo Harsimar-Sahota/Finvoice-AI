@@ -1,15 +1,19 @@
 # 🧾 Finvoice AI
 
-### **AI-Powered Invoice Generator & Finance Assistant (MERN + Gemini AI)**
+### AI-Powered Invoice Generator & Finance Assistant (MERN + Gemini AI)
 
-**Finvoice AI** is a full-stack, AI-driven invoicing and finance automation platform.
-It converts plain text (emails, messages, or receipts) into professional invoices, sends automated payment reminders, and generates insightful financial summaries — all powered by **Google Gemini AI**.
+**Finvoice AI** is a production-ready, full-stack SaaS app for automating invoicing and basic finance workflows.
 
- Built with the **MERN Stack**
- Enhanced with **Docker** + **CI/CD Pipelines**
- Secured via **JWT Authentication**
- Tested with **Jest**
+It turns plain text (emails, chats, notes) into structured invoices, sends AI-generated payment reminders, and shows revenue insights on a clean dashboard — all powered by **Google Gemini**.
 
+**Highlights**
+
+-  Built with the **MERN stack** (MongoDB, Express, React, Node)
+-  **AI features** using Google Gemini (`@google/generative-ai`)
+-  **JWT authentication** + protected routes
+-  **Dockerized** with `docker-compose`
+-  **CI/CD** via GitHub Actions
+-  **Unit tests** with Jest
 ---
 
 ## 🌐 Live Demo
@@ -47,9 +51,27 @@ password: Demopass12$
 ---
 
 ## 🧠 Overview
+Finvoice AI is aimed at freelancers and small businesses who need simple but smart invoicing.
 
-Finvoice AI helps freelancers and small businesses automate invoicing and payment management with AI.
-It integrates Google Gemini to **parse unstructured text into structured invoices**, provides **reminder emails**, and visualizes revenue insights through a clean dashboard.
+The app can:
+
+Parse unstructured text into a structured invoice
+
+Generate payment reminder emails with AI
+
+Track paid / unpaid invoices and basic revenue stats
+
+Manage user profile and business details
+
+From a dev perspective, this project demonstrates:
+
+Building a real SaaS-style app with authentication & dashboards
+
+Integrating a modern AI API into an existing backend
+
+Using Docker + CI/CD for repeatable deployments
+
+Writing unit tests around core backend logic
 
 ---
 
@@ -107,22 +129,58 @@ Finvoice-AI/
 │
 ├── backend/
 │   ├── config/
+│   │   └── db.js
 │   ├── controllers/
-│   ├── middleware/
+│   │   ├── aiController.js
+│   │   ├── authController.js
+│   │   └── invoiceController.js
+│   ├── middlewares/
+│   │   └── authMiddleware.js
 │   ├── models/
+│   │   ├── Invoice.js
+│   │   └── User.js
 │   ├── routes/
-│   ├── utils/
-│   └── server.js
+│   │   ├── aiRoutes.js
+│   │   ├── authRoutes.js
+│   │   └── invoiceRoutes.js
+│   ├── tests/
+│   │   └── auth.test.js
+│   ├── server.js
+│   └── .env.example
 │
 ├── frontend/
-│   ├── src/
-│   ├── public/
-│   └── vite.config.js
+│   └── invoice-generator/
+│       ├── src/
+│       │   ├── assets/
+│       │   ├── components/
+│       │   ├── context/
+│       │   ├── pages/
+│       │   ├── utils/
+│       │   ├── test/
+│       │   │   └── fileMock.js
+│       │   ├── App.jsx
+│       │   ├── index.css
+│       │   └── main.jsx
+│       ├── public/
+│       ├── screenshots/
+│       ├── vite.config.js
+│       └── jest.config.cjs
 │
-├── .github/workflows/     # CI/CD pipelines
-├── docker-compose.yml     # Docker setup
-├── .env.example
+├── docs/
+│   └── architecture.png
+│
+├── screenshots/
+│   ├── dashboard.png
+│   ├── create-invoice.png
+│   ├── ai-generated.png
+│   ├── reminder-email.png
+│   └── profile-settings.png
+│
+├── docker-compose.yml
+├── .github/workflows/        # CI/CD pipelines
+├── .env.example              # root example env, if used
 └── README.md
+
 ```
 
 ---
@@ -178,32 +236,33 @@ Visit:
 
 ## 🐳 Docker Setup
 
-### Build & Run
+To run everything with Docker:
 
-```bash
 docker-compose up --build
-```
 
-App runs on:
 
-* Frontend → `http://localhost:5173`
-* Backend → `http://localhost:8000/api`
+The stack exposes:
 
-*(Update your Dockerfiles to expose ports 5173 & 8000)*
+Frontend → http://localhost:5173
 
+Backend API → http://localhost:8000/api
+
+Make sure the ports in docker-compose.yml match these values.
 ---
 
 ## 🔄 Continuous Integration / Deployment (CI/CD)
 
-This project uses **GitHub Actions** for:
+This project uses GitHub Actions to:
 
-* Automated builds
-* Jest tests
-* Docker image build
-* Auto-deployment to production
+Run builds & Jest tests on every push
 
-Add your badge here after setup:
-`![CI](https://github.com/Harsimar-Sahota/Finvoice-AI/actions/workflows/main.yml/badge.svg)`
+Build Docker images
+
+Deploy the app to production (Vercel + Render)
+
+Add your CI badge here after enabling the workflow:
+
+![CI](https://github.com/Harsimar-Sahota/Finvoice-AI/actions/workflows/main.yml/badge.svg)
 
 ##   Testing (Jest)
 
