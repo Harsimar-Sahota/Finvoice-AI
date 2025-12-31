@@ -1,4 +1,5 @@
 # 🧾 Finvoice AI
+[![Finvoice AI CI](https://github.com/Harsimar-Sahota/Finvoice-AI/actions/workflows/ci.yml/badge.svg)](https://github.com/Harsimar-Sahota/Finvoice-AI/actions/workflows/ci.yml)
 
 ### AI-Powered Invoice Generator & Finance Assistant (MERN + Gemini AI)
 
@@ -250,19 +251,17 @@ Backend API → http://localhost:8000/api
 Make sure the ports in docker-compose.yml match these values.
 ---
 
-## 🔄 Continuous Integration / Deployment (CI/CD)
+## ## 🔄 Continuous Integration / Deployment (CI/CD)
 
-This project uses GitHub Actions to:
+This project uses **GitHub Actions** to automate quality checks and deployments:
 
-Run builds & Jest tests on every push
+-  Run builds and **Jest tests** on every push and pull request  
+-  Build **Docker images** for consistent environments  
+-  Deploy the frontend to **Vercel** and backend to **Render**  
+-  Block merges if tests or builds fail  
 
-Build Docker images
+CI status is displayed via the badge at the top of this README.
 
-Deploy the app to production (Vercel + Render)
-
-Add your CI badge here after enabling the workflow:
-
-![CI](https://github.com/Harsimar-Sahota/Finvoice-AI/actions/workflows/main.yml/badge.svg)
 
 ##   Testing (Jest)
 
