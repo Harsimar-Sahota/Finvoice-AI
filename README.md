@@ -291,6 +291,8 @@ npm run test:watch
 
 ## 📈 Scaling Plan
 
+The following strategies outline how Finvoice AI can scale as user traffic and AI usage grow:
+
 | # | Strategy                                  | Purpose                |
 | - | ----------------------------------------- | ---------------------- |
 | 1 | Add **rate limiting** on AI endpoints     | Prevent API abuse      |
