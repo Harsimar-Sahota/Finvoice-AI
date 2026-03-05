@@ -26,10 +26,6 @@ It turns plain text (emails, chats, notes) into structured invoices, sends AI-ge
 email: Demo@FinvoiceAI.com
 password: Demopass12$
 ```
-
-🎥 **90-Second Demo Video:** *[Add your Loom or YouTube link]*
-> Note: This project is actively maintained and open to future enhancements.
-
 ---
 
 ## 🖼️ Screenshots
