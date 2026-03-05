@@ -333,5 +333,4 @@ Full Stack Developer — MERN + AI
 ## 🪪 License
 
 This project is open-source under the **MIT License**.
-# PROJECT IS BEING UPDATED AND UNDER CONSTRUCTION
 ---
